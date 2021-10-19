@@ -1,47 +1,29 @@
-.App {
-  text-align: center;
+.coustom-btn{
+  /* display: inline-block; */
+  background-color: rgb(86, 135, 1);
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.cp{
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.color-cp{
+  color: rgb(86, 135, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cos-login-container{
+  height: 550px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
+/* ----------------------------------home banner-------------------*/
 
 .banner{
-  padding: 50px 100px 100px;
+  padding: 00px 100px 100px;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -89,7 +71,7 @@
     flex-direction: column;
   }
   .banner{
-    padding: 150px 20px 50px;
+    padding: 50px 20px 50px;
     flex-direction: column-reverse;
   }
   .banner .banner-image {
@@ -104,11 +86,12 @@
 
 @media (max-width:600px)
 {
-  .banner .banner-image{
-    /* margin-top: 30px; */
-  }
+  
   .banner .content a{
     margin-top: 5px;
     font-weight: normal;
   }
 }
+
+
+/* ---------------------- Home Banner End Here ================ */

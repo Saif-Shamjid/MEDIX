@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AuthProvider from './context/AuthProvider';
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
-import Nav from './components/Nav/Nav';
+import CosNav from './components/Nav/Nav';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
@@ -10,6 +10,7 @@ import OurDoctors from './pages/OurDoctors/OurDoctors';
 import News from './pages/News/News';
 import Register from './pages/Register/Register';
 import NotFound from './pages/NotFound/NotFound';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <AuthProvider>
         <BrowserRouter>
 
-          <Nav></Nav>
+          <CosNav></CosNav>
 
           <Switch>
 
@@ -30,9 +31,9 @@ function App() {
                 <Home></Home>
               </Route>
 
-              <Route path="/news">
+              <PrivateRoute path="/news">
                 <News></News>
-              </Route>
+              </PrivateRoute>
 
               <Route path="/ourdoctors">
                 <OurDoctors></OurDoctors>

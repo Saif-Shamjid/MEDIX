@@ -16,6 +16,7 @@ const useFIrebase = () => {
 
 
     const signInWithGoogle = () => {
+        setIsLoading(true)
         return signInWithPopup(auth,googleProvider)
         
     }

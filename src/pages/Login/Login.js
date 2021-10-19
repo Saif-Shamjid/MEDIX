@@ -1,9 +1,16 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-    const {setIsLoading,setUser,signInWithGoogle,user,error,processLogin,setError,logOut} = useAuth();
+    const {setIsLoading,setUser,signInWithGoogle,user,error,processLogin,setError} = useAuth();
 
+    const location  = useLocation();
+    const history = useHistory();
+
+    const redirect_uri = location.state?.from || '/' ;
 
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
@@ -28,6 +35,7 @@ const Login = () => {
             const user = userCredential.user;
             console.log(user);
             // ...
+            history.push(redirect_uri)
             setError('')
           })
           .catch(error => {
@@ -39,6 +47,7 @@ const Login = () => {
         signInWithGoogle()
         .then(res=>{
             setUser(res.user);
+            history.push(redirect_uri)
             console.log(res.user);
         })
         .finally(()=> setIsLoading(false))
@@ -53,6 +62,7 @@ const Login = () => {
     }
 
     return (
+        <div className='cos-login-container'>
         <div className='container'>
             <h2>{user.displayName}</h2>
 
@@ -72,10 +82,14 @@ const Login = () => {
                 
                 <div className="row mb-3 text-danger">{error}</div>
                 <button type="submit" className="btn btn-primary">Login</button>
+                <p className='mt-3'>Don't Have an Account <Link to='/register'>Register</Link></p>
             </form>
-
-            <button onClick={handleSignIn}>Google</button>
-            <button onClick={logOut}>Logout</button>
+            <div className='my-5'>
+                <h3>Or Login Using Google</h3>
+                
+                <button className='btn btn-info' onClick={handleSignIn}><FontAwesomeIcon icon={['fab', 'google']} />Google</button>
+            </div>
+        </div>
         </div>
     );
 };

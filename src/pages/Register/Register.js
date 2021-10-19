@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-    const {setUser,setUserName,setError,error,createNewUser} = useAuth()
+    const {setUserName,setError,error,createNewUser} = useAuth()
+
+    const history = useHistory();
+    const redirect_uri = '/login';
 
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
@@ -33,7 +37,7 @@ const Register = () => {
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-            setUser(user);
+            //setUser(user);
             console.log(user);
             // ...
             setError('')
@@ -41,6 +45,7 @@ const Register = () => {
             .then(() => {
                 // Profile updated!
                 // ...
+                history.push(redirect_uri)
                 console.log("Profile updated!");
               }).catch((error) => {
                 // An error occurred
@@ -70,8 +75,9 @@ const Register = () => {
 
 
     return (
+        <div className='cos-login-container'>
         <div className='container'>
-            <h2>Register hdre</h2>
+            <h2>Register here:</h2>
             <form onSubmit={handleRegister}>
                 <div className="row mb-3">
                     <label htmlFor="inputName3" className="col-sm-2 col-form-label">Name</label>
@@ -95,6 +101,8 @@ const Register = () => {
                 <div className="row mb-3 text-danger">{error}</div>
                 <button type="submit" className="btn btn-primary">Register</button>
             </form>
+            
+        </div>
         </div>
     );
 };
