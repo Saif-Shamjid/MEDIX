@@ -1,0 +1,47 @@
+[
+    {
+      "_id": "616e54b24ef61947fd46244f",
+      "index": 0,
+      "guid": "fdff81bc-7da0-4836-a6b7-5a667366bb82",
+      "balance": "$3,927.18",
+      "picture": "\thttp://st.ourhtmldemo.com/template/meditex-final/assets/image/articles/hm-2-articles-1.jpg",
+      "name": "Thousands of Patients Referred to Substance Use Treatment",
+      "gender": "male",
+      "company": "COMTRACT",
+      "email": "hestersosa@comtract.com",
+      "phone": "+1 (814) 454-2181",
+      "address": "595 Rockaway Parkway, Kempton, Palau, 5997",
+      "about": "Nulla minim incididunt est velit occaecat. Occaecat et magna aliqua mollit cillum aliqua. Labore sit aliquip elit Lorem irure aute id nostrud officia eu amet velit laboris. Amet sunt quis veniam tempor culpa.\r\n",
+      "registered": "2015-10-16T10:45:58 -06:00"
+    },
+    {
+      "_id": "616e54b25cb62da2c340a84e",
+      "index": 1,
+      "guid": "642229ea-a043-4851-9dcb-35a8b954834c",
+      "balance": "$2,256.11",
+      "picture": "\thttp://st.ourhtmldemo.com/template/meditex-final/assets/image/articles/hm-2-articles-2.jpg",
+      "name": "Medstar Health Bel Air Cancer Services Aligns Expertise",
+      "gender": "female",
+      "company": "SLUMBERIA",
+      "email": "ilafields@slumberia.com",
+      "phone": "+1 (915) 518-3129",
+      "address": "513 Glen Street, Ferney, Northern Mariana Islands, 9016",
+      "about": "Irure adipisicing ad et ea sunt labore officia nisi magna aute consectetur sint est. Deserunt do esse dolor anim in dolor elit est aliqua est sunt. Ad ex adipisicing excepteur irure veniam ipsum. Dolor mollit laborum irure consectetur est amet quis est. Exercitation nostrud culpa consequat do aute deserunt. Velit esse culpa laborum laborum irure do ut cupidatat nulla sint exercitation sint velit.\r\n",
+      "registered": "2017-01-26T06:32:00 -06:00"
+    },
+    {
+      "_id": "616e54b25e9ca8069320b7ea",
+      "index": 2,
+      "guid": "0d77b420-a228-40c7-b1e7-7500b85ad0eb",
+      "balance": "$2,873.18",
+      "picture": "\thttp://st.ourhtmldemo.com/template/meditex-final/assets/image/articles/hm-2-articles-3.jpg",
+      "name": "Dr. Gabriel Del Corral Joins MedStar Plastic",
+      "gender": "male",
+      "company": "TUBALUM",
+      "email": "olsenwatts@tubalum.com",
+      "phone": "+1 (846) 533-3379",
+      "address": "601 Williams Avenue, Wheaton, American Samoa, 6910",
+      "about": "Anim do dolore dolor cillum ad. Nulla culpa mollit est eu pariatur incididunt labore magna labore cupidatat. Labore ipsum labore non officia est officia duis consequat non est aute incididunt. Voluptate consectetur ullamco aliqua qui quis velit aute elit incididunt ex.\r\n",
+      "registered": "2021-08-11T12:30:18 -06:00"
+    }
+]

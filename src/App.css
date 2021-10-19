@@ -7,6 +7,10 @@
   font-weight: 600;
   margin-top: 20px;
 }
+
+.coustom-btn:hover{
+  color: #fff;
+}
 .cp{
   cursor: pointer;
 }
@@ -20,10 +24,16 @@
   display: flex;
   align-items: center;
 }
+
+.service-img-container{
+  height: 40%;
+  width: 40%;
+}
+
 /* ----------------------------------home banner-------------------*/
 
 .banner{
-  padding: 00px 100px 100px;
+  padding: 00px 100px 30px;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;

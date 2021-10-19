@@ -11,6 +11,7 @@ import News from './pages/News/News';
 import Register from './pages/Register/Register';
 import NotFound from './pages/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import SingleService from './pages/SingleService/SingleService';
 
 function App() {
   return (
@@ -31,13 +32,17 @@ function App() {
                 <Home></Home>
               </Route>
 
+              <PrivateRoute path="/service/:serviceId">
+                <SingleService></SingleService>
+              </PrivateRoute>
+
               <PrivateRoute path="/news">
                 <News></News>
               </PrivateRoute>
 
-              <Route path="/ourdoctors">
+              <PrivateRoute path="/ourdoctors">
                 <OurDoctors></OurDoctors>
-              </Route>
+              </PrivateRoute>
 
               <Route path="/login">
                 <Login></Login>

@@ -17,7 +17,7 @@ const CosNav = () => {
                 <Navbar.Collapse className="justify-content-end">
                 
                     <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                    <Nav.Link as={Link} to="/home">Services</Nav.Link>
+                    <Nav.Link as={Link} to="/ourdoctors">Doctors</Nav.Link>
                     <Nav.Link as={Link} to="/news">News</Nav.Link>
                     {
                         user.email ? <div className='cp text-danger mx-3' onClick={logOut}>LogOut</div>
